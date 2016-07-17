@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.clicksv.ClickSV"
+        version   = "1.1.0">
+
+    <name>ClickSV</name>
+
+    <description>
+        O aplicativo do ClickSV.
+    </description>
+
+    <author href="http://clicksv.com" email="contato@clicksv.com">
+        ClickSV
+    </author>
+
+    <content src="index.html" />
+    <access origin="*"/>
+
+</widget>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>ClickSV</title>
+    </head>
+    <bodyonload="onLoad()">
+        Carregando...
+        <script type="text/javascript" src="cordova.js"></script>
+   
+   
+   <script type="text/javascript" charset="utf-8">
+            
+            
+            function onLoad() {
+                document.addEventListener("online", onOnline, false);
+                document.addEventListener("deviceready", onDeviceReady, false);
+                
+                document.addEventListener("offline", onDeviceOffline, false);
+                
+            }
+        
+        // Cordova is loaded and it is now safe to make calls Cordova methods
+        //
+        function onDeviceOffline() {
+            window.location = "error.html";
+        }
+        
+        function onDeviceReady() {
+            
+        }
+        
+        // Handle the online event
+        //
+        function onOnline() {
+           
+            setTimeout(location.href='http://clicksv.com', '2000');
+        }
+       
+        setTimeout(location.href='http://clicksv.com', '5000');
+        
+            </script>
+    </body>
+</html>
